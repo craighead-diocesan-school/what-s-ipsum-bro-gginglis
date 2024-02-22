@@ -6,26 +6,31 @@
 <Header />
 
 <main>
-  <h2>Lorem Ipsum with Flavour</h2>
+  <div class="columns">
+    <div class="text">
+      <h2>Lorem Ipsum with Flavour</h2>
+      <p>
+        What's Ipsum Bro is a lorem ipsum generator with a twist. Instead of the
+        same old boring lorem ipsum, you can choose from a variety of flavours
+        to spice up your placeholder text.
+      </p>
+    </div>
 
-  <p>
-    What's Ipsum Bro is a lorem ipsum generator with a twist. Instead of the
-    same old boring lorem ipsum, you can choose from a variety of flavours to
-    spice up your placeholder text.
-  </p>
-
-  <a href="pirate">
-    <img class="box" src="pirate.png" alt="Pirate" />
-  </a>
-  <a href="cheese">
-    <img class="box" src="cheese.png" alt="Cheese" />
-  </a>
-  <a href="cupcake">
-    <img class="box" src="cupcake.png" alt="Cupcake" />
-  </a>
-  <a href="hipster">
-    <img class="box" src="hipster.png" alt="Hipster" />
-  </a>
+    <div class="boxes">
+      <a href="pirate">
+        <img class="box" src="pirate.png" alt="Pirate" />
+      </a>
+      <a href="cheese">
+        <img class="box" src="cheese.png" alt="Cheese" />
+      </a>
+      <a href="cupcake">
+        <img class="box" src="cupcake.png" alt="Cupcake" />
+      </a>
+      <a href="hipster">
+        <img class="box" src="hipster.png" alt="Hipster" />
+      </a>
+    </div>
+  </div>
 </main>
 
 <Footer />
@@ -38,5 +43,37 @@
     padding: 25px;
     background: rgba(237, 97, 186, 0.161);
     box-shadow: 5px 5px rgb(237, 97, 185);
+  }
+
+  .boxes {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 25px;
+    justify-content: space-between;
+    width: 400px;
+  }
+
+  .text {
+    font-family: "Anta", sans-serif;
+    width: 30%;
+    text-align: center;
+  }
+  .columns {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    background: rgba(237, 97, 186, 0.161);
+    padding: 5rem 10rem;
+  }
+
+  @media screen and (max-width: 600px) {
+    .columns {
+      flex-direction: column;
+      padding: 2rem 3rem;
+    }
+
+    .text {
+      width: 100%;
+    }
   }
 </style>
