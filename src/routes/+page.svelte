@@ -78,7 +78,7 @@
     }
   }
   main {
-    background: rgba(237, 97, 186, 0.161);
+    background: rgb(255, 211, 239);
     padding-bottom: 3rem;
   }
 
@@ -93,7 +93,16 @@
       radial-gradient(52.5px at 50% calc(100% + 34px), #0000 99%, #000 101%) 50%
         calc(100% - 40px) / 160px 100% repeat-x;
     mask: var(--mask);
-    background: rgba(237, 97, 186, 0.161);
+    background: rgb(255, 188, 227);
     height: 70px;
+    transition: 0.5s;
+  }
+  .box:hover {
+    transform: scale(1.1);
+    transition: 0.25s;
+  }
+  .wave:hover {
+    transform: scale(1.1, 1.5);
+    transition: 0.5s;
   }
 </style>
