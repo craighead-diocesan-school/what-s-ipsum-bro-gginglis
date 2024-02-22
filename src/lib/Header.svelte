@@ -10,8 +10,6 @@
   h1 {
     font-family: "Anta", sans-serif;
     text-align: center;
-    margin-top: 20px;
-    margin-bottom: 0;
     padding: 2%;
   }
 </style>
