@@ -4,7 +4,14 @@
   /* Add your own fonts and global styles here. */
   @import url("https://fonts.googleapis.com/css2?family=Anta&display=swap");
   /* The code below resets the browser's default styles. It's a good idea to include this in your layout component. */
-
+  @font-face {
+    font-family: hyper-scrypt;
+    src: url("/HyperScrypt-Stencil_web.woff2") format("woff2");
+  }
+  @font-face {
+    font-family: basteleur;
+    src: url("/Basteleur-Moonlight.woff2.") format("woff2");
+  }
   :global(body) {
     margin: 0;
     padding: 0;

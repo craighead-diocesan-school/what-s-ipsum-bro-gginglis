@@ -1,8 +1,11 @@
 <script>
   import Header from "$lib/Header.svelte";
+  import Nav from "$lib/Nav.svelte";
 </script>
 
 <Header />
+
+<Nav />
 
 <main>
   <h2>Yum Cupcake Ipsum</h2>
