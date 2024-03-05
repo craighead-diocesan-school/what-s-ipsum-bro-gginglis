@@ -5,7 +5,7 @@
 
 <Header />
 
-<!-- <Nav /> -->
+<Nav />
 
 <main>
   <div class="subheading">
@@ -36,6 +36,7 @@
     font-family: "hyper-scrypt";
     color: #d9edff;
     font-size: 300%;
+    transition: 3s;
   }
 
   .subheading {
@@ -51,20 +52,37 @@
   p {
     font-family: basteleur;
     margin: 50px 250px;
-
     font-size: 20px;
     background-color: rgba(255, 255, 255, 0.5);
+    transition: 0.5s;
   }
 
   .paragraph {
     background-image: url("/giphy.gif");
     padding: 80px 0px;
     background-repeat: no-repeat;
-    background-position: bottom;
+    background-position: left;
+    transition: 7.5s;
   }
 
   main {
     background-image: url("/giphy (1).gif");
     background-position: bottom;
+  }
+
+  h2:hover {
+    color: #880808;
+    transition: 3s;
+  }
+
+  p:hover {
+    background-color: whitesmoke;
+    transition: 0.5s;
+    transform: scale(1.1);
+  }
+
+  .paragraph:hover {
+    background-position: right;
+    transition: 7.5s;
   }
 </style>
