@@ -16,7 +16,12 @@
 
 <main>
   <div class="subheading">
-    <h2>Hipster Ipsum</h2>
+    <svg viewBox="0 0 250 250">
+      <path id="curve" fill="transparent" d="M 0 250 Q 400 100 750 250 " />
+      <text width="200">
+        <textPath xlink:href="#curve"> Hipster Ipsum </textPath>
+      </text>
+    </svg>
     <img src="/icons8-mustache-100.png" alt="" />
   </div>
 
@@ -48,22 +53,31 @@
     background-color: #bfcdff;
     display: grid;
     grid:
-      "h    h     h" 50vh
+      "h    h     h" 35vh
       "p1    l    ." auto
       ".     l    p2" auto
       / 3fr 2px 3fr;
   }
   .subheading {
-    color: #446dff;
     grid-area: h;
-    text-align: center;
     justify-content: center;
     display: flex;
     flex-direction: column;
     align-items: center;
-    font-size: 200%;
-    font-family: "Rowdies", sans-serif;
+    fill: #446dff;
   }
+
+  textPath {
+    grid-area: h;
+    font-size: 5em;
+    font-family: "Rowdies", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    text-align: center;
+    flex-direction: column;
+    align-items: center;
+  }
+
   .p1 {
     color: #446dff;
     grid-area: p1;
@@ -92,7 +106,7 @@
   }
 
   img {
-    height: 150px;
-    width: 150px;
+    height: 175px;
+    width: 175px;
   }
 </style>
