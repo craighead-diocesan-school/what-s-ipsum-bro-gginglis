@@ -5,7 +5,7 @@
 
 <Header />
 
-<Nav />
+<!-- <Nav /> -->
 
 <main>
   <div class="subheading">

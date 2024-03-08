@@ -15,7 +15,7 @@
 
 <main>
   <div class="h2">
-    <h2>cupcake ipsum</h2>
+    <h2>cupcake ipsum ❤︎</h2>
   </div>
 
   <div class="text">
@@ -55,7 +55,7 @@
     color: #ea4b63;
     font-size: 4em;
     margin: 5% 7% 2%;
-    width: min-content;
+    width: 50%;
   }
 
   .text p {

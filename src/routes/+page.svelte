@@ -44,6 +44,7 @@
     padding: 25px;
     background: rgba(237, 97, 186, 0.161);
     box-shadow: 5px 5px rgb(237, 97, 185);
+    transition: 0.25s;
   }
 
   .boxes {
